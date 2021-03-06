@@ -9,6 +9,7 @@ public class App {
 		  View v = new View("MVC with SSaurel");
 		  Controller c = new Controller(m, v);
 		  c.initController();
+		  
 	}
 
 }

@@ -18,6 +18,7 @@ public class Controller {
 	  view.getHello().addActionListener(e -> sayHello());
 	  view.getBye().addActionListener(e -> sayBye());
 	 }
+	 
 	 private void saveFirstname() {
 	  model.setFirstname(view.getFirstnameTextfield().getText());
 	  JOptionPane.showMessageDialog(null, "Firstname saved : " + model.getFirstname(), "Info", JOptionPane.INFORMATION_MESSAGE);

@@ -94,6 +94,7 @@ public class View {
 	 public JButton getLastnameSaveButton() {
 	  return lastnameSaveButton;
 	 }
+	 
 	 public void setLastnameSaveButton(JButton lastnameSaveButton) {
 	  this.lastnameSaveButton = lastnameSaveButton;
 	 }
