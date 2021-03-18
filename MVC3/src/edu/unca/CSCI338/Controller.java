@@ -34,7 +34,7 @@ public class Controller {
 	  
 	  
 	  
-	  
+	    
 	   
 	  
 	  
@@ -42,7 +42,7 @@ public class Controller {
 	  JOptionPane.showMessageDialog(null, "All Fields Saved", "Info", JOptionPane.INFORMATION_MESSAGE);
 	 }
 //	 private void saveLastname() {
-//	  model.setVerb1(view.getVerb1TF().getText());
+//	  model.setVerb1(view .getVerb1TF().getText());
 //	  JOptionPane.showMessageDialog(null, "Lastname saved : " + model.getVerb1(), "Info", JOptionPane.INFORMATION_MESSAGE);
 //	 }
 	 

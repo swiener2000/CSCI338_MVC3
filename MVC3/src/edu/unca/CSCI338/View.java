@@ -298,8 +298,8 @@ public JLabel getAdj1Label() {
 //	  this.firstnameTextfield = firstnameTextfield;
 //	 }
 //	 
+//	   
 //	  
-//	 
 //	 public JTextField getLastnameTextfield() {
 //	  return lastnameTextfield;
 //	 }

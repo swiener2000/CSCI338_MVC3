@@ -8,9 +8,9 @@ public class Model {
 	 private String adj2;
 	 private String noun1;
 	 private String verb2;
-	 private String adj3;
+	 private String adj3; 
 	 private String noun2;
-	 private String adj4;
+	 private String adj4; 
 	 private String adj5;
 	 private String noun3;
 	 private String noun4;
