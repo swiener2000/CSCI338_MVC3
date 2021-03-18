@@ -24,6 +24,7 @@ public class Model {
 		 this.verb2 = verb2; 
 		 this.adj3 = adj3;
 		 this.noun2 = noun2;
+		 
 		 this.adj4 = adj4;
 		 this.adj5 = adj5;
 		 this.noun3 = noun3;
