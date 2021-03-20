@@ -13,13 +13,11 @@ public class Controller {
 	  view.getVerb1TF().setText(model.getVerb1());
 	 }
 	 public void initController() {
-	  view.getFirstnameSaveButton().addActionListener(e -> saveFirstname());
-	 // view.getLastnameSaveButton().addActionListener(e -> saveLastname());
-	  view.getHello().addActionListener(e -> showMadLib());
-	 // view.getBye().addActionListener(e -> sayBye());
+	  view.getSaveButton().addActionListener(e -> saveDisplay());
+	  view.getDisplay().addActionListener(e -> showMadLib());
 	 }
 	 
-	 private void saveFirstname() {
+	 private void saveDisplay() {
 	  model.setAdj1(view.getAdj1TF().getText());
 	  model.setVerb1(view.getVerb1TF().getText());
 	  model.setAdj2(view.getAdj2TF().getText());
@@ -41,10 +39,7 @@ public class Controller {
 	  
 	  JOptionPane.showMessageDialog(null, "All Fields Saved", "Info", JOptionPane.INFORMATION_MESSAGE);
 	 }
-//	 private void saveLastname() {
-//	  model.setVerb1(view.getVerb1TF().getText());
-//	  JOptionPane.showMessageDialog(null, "Lastname saved : " + model.getVerb1(), "Info", JOptionPane.INFORMATION_MESSAGE);
-//	 }
+
 	 
 	 
 	 
@@ -59,7 +54,5 @@ public class Controller {
 			  + "I think I'd rather take my chances with the cafeteria!"
 			  , "Info", JOptionPane.INFORMATION_MESSAGE);
 	 }
-//	 private void sayBye() {
-//	  System.exit(0);
-//	 }
+
 }

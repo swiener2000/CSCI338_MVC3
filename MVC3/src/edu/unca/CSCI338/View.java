@@ -35,9 +35,6 @@ public class View {
 	 private JTextField noun4TF;
 	 
 	 
-
-
-	
 	 
 	public JTextField getAdj1TF() {
 		return adj1TF;
@@ -175,12 +172,8 @@ public JLabel getAdj1Label() {
 	}
 
 
-	//	 private JTextField firstnameTextfield;
-//	 private JTextField lastnameTextfield;
-	 private JButton firstnameSaveButton;
-	 private JButton lastnameSaveButton;
-	 private JButton hello;
-	 private JButton bye;
+	 private JButton SaveButton;
+	 private JButton display;
 	 public View(String title) {
 	  frame = new JFrame(title);
 	  frame.getContentPane().setLayout(new BorderLayout());
@@ -217,10 +210,9 @@ public JLabel getAdj1Label() {
 	  
 	  
 	  
-	  firstnameSaveButton = new JButton("Save all");
-	  lastnameSaveButton = new JButton("Fix this zack ");
-	  hello = new JButton("Show Mad Lib!");
-	  bye = new JButton("This does nothing!");
+	  SaveButton = new JButton("Save all");
+	  display = new JButton("Show Mad Lib!");
+	  
 	  // Add UI element to frame
 	  GroupLayout layout = new GroupLayout(frame.getContentPane());
 	  layout.setAutoCreateGaps(true);
@@ -239,13 +231,13 @@ public JLabel getAdj1Label() {
 	    .addComponent(noun4Label))
 	    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(adj1TF)
 	    .addComponent(verb1TF).addComponent(adj2TF).addComponent(noun1TF).addComponent(verb2TF).addComponent(adj3TF).addComponent(noun2TF).addComponent(adj4TF).addComponent(adj5TF).addComponent(noun3TF).addComponent(noun4TF))
-	    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(firstnameSaveButton)
+	    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(SaveButton)
 	    )
-	    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(hello)
+	    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(display)
 	    ));
 	  layout.setVerticalGroup(layout.createSequentialGroup()
 	    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(adj1Label)
-	    .addComponent(adj1TF).addComponent(firstnameSaveButton).addComponent(hello))
+	    .addComponent(adj1TF).addComponent(SaveButton).addComponent(display))
 	    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(verbLabel)
 	    .addComponent(verb1TF))
 	    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(adj2Label)
@@ -267,8 +259,8 @@ public JLabel getAdj1Label() {
 	    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(noun4Label)
 	    	    .addComponent(noun4TF))
 	    );
-	  layout.linkSize(SwingConstants.HORIZONTAL, firstnameSaveButton);
-	  layout.linkSize(SwingConstants.HORIZONTAL, hello);
+	  layout.linkSize(SwingConstants.HORIZONTAL, SaveButton);
+	  layout.linkSize(SwingConstants.HORIZONTAL, display);
 	  frame.getContentPane().setLayout(layout);
 	 }
 	 public JFrame getFrame() {
@@ -277,58 +269,21 @@ public JLabel getAdj1Label() {
 	 public void setFrame(JFrame frame) {
 	  this.frame = frame;
 	 }
-	 
-	 
-//	 public JLabel getFirstnameLabel() {
-//	  return firstnameLabel;
-//	 }
-//	 public void setFirstnameLabel(JLabel firstnameLabel) {
-//	  this.firstnameLabel = firstnameLabel;
-//	 }
-//	 public JLabel getLastnameLabel() {
-//	  return lastnameLabel;
-//	 }
-//	 public void setLastnameLabel(JLabel lastnameLabel) {
-//	  this.lastnameLabel = lastnameLabel;
-//	 }
-//	 public JTextField getFirstnameTextfield() {
-//	  return firstnameTextfield;
-//	 }
-//	 public void setFirstnameTextfield(JTextField firstnameTextfield) {
-//	  this.firstnameTextfield = firstnameTextfield;
-//	 }
-//	 
-//	  
-//	 
-//	 public JTextField getLastnameTextfield() {
-//	  return lastnameTextfield;
-//	 }
-//	 public void setLastnameTextfield(JTextField lastnameTextfield) {
-//	  this.lastnameTextfield = lastnameTextfield;
-//	 }
-	 public JButton getFirstnameSaveButton() {
-	  return firstnameSaveButton;
+
+	 public JButton getSaveButton() {
+	  return SaveButton;
 	 }
-	 public void setFirstnameSaveButton(JButton firstnameSaveButton) {
-	  this.firstnameSaveButton = firstnameSaveButton;
-	 }
-	 public JButton getLastnameSaveButton() {
-	  return lastnameSaveButton;
+	 public void setSaveButton(JButton SaveButton) {
+	  this.SaveButton = SaveButton;
 	 }
 	 
-	 public void setLastnameSaveButton(JButton lastnameSaveButton) {
-	  this.lastnameSaveButton = lastnameSaveButton;
+	 
+
+	 public JButton getDisplay() {
+	  return display;
 	 }
-	 public JButton getHello() {
-	  return hello;
+	 public void setDisplay(JButton display) {
+	  this.display = display;
 	 }
-	 public void setHello(JButton hello) {
-	  this.hello = hello;
-	 }
-	 public JButton getBye() {
-	  return bye;
-	 }
-	 public void setBye(JButton bye) {
-	  this.bye = bye;
-	 }
+
 }

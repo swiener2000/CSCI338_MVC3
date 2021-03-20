@@ -1,8 +1,7 @@
 package edu.unca.CSCI338;
 
 public class Model {
-//	 private String firstname;
-//	 private String lastname;
+
 	 private String adj1;
 	 private String verb1;
 	 private String adj2;
@@ -15,7 +14,6 @@ public class Model {
 	 private String noun3;
 	 private String noun4;
 	 
-	 //public Model(String firstname, String lastname) {
 	 public Model(String adj1, String verb1, String adj2, String noun1, String verb2, String adj3, String noun2, String adj4, String adj5, String noun3, String noun4) {
 		 this.adj1 = adj1;
 		 this.verb1 = verb1;
