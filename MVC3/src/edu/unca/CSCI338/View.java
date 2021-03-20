@@ -104,7 +104,7 @@ public class View {
 	}
 
 
-public JLabel getAdj1Label() {
+	public JLabel getAdj1Label() {
 		return adj1Label;
 	}
 	public void setAdj1Label(JLabel adj1Label) {
@@ -193,9 +193,7 @@ public JLabel getAdj1Label() {
 	  adj5Label = new JLabel("Adjective:");
 	  noun3Label = new JLabel("Noun:");
 	  noun4Label= new JLabel("Noun:");
-	    
-	  
-	  
+	   
 	  adj1TF = new JTextField();
 	  verb1TF = new JTextField();
 	  adj2TF =new JTextField();
@@ -277,8 +275,6 @@ public JLabel getAdj1Label() {
 	  this.SaveButton = SaveButton;
 	 }
 	 
-	 
-
 	 public JButton getDisplay() {
 	  return display;
 	 }

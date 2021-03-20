@@ -29,30 +29,22 @@ public class Controller {
 	  model.setAdj5(view.getAdj5TF().getText());
 	  model.setNoun3(view.getNoun3TF().getText());
 	  model.setNoun4(view.getNoun4TF().getText());
-	  
-	  
-	  
-	  
-	   
-	  
-	  
-	  
+	    
 	  JOptionPane.showMessageDialog(null, "All Fields Saved", "Info", JOptionPane.INFORMATION_MESSAGE);
 	 }
 
-	 
-	 
-	 
 	 private void showMadLib() {
-	  JOptionPane.showMessageDialog(null, "Our school cafeteria has really " + model.getAdj1() + " food. Just thinking about it makes my stomach " + model.getVerb1() + ".\n " 
-			  + "The spaghetti is " + model.getAdj2() + " and tastes like " + model.getNoun1() + ". "
-			  + "One day, I swear one of my meatballs started to " + model.getVerb2() + "! \n"
-			  + "The turkey tacos are totally " + model.getAdj3() + " and look kind of like old " + model.getNoun2() + ". \n"
-			  + "My friend Dana actually likes the meatloaf, even though it's " + model.getAdj4() + " and " + model.getAdj5() + ". \n"
-			  + "I call it \"mystery meatloaf\" and think it's really made out of " + model.getNoun3() + ". \n"
-			  + "My dad said he'd make my lunches, but the first day, he made a sandwich out of " + model.getNoun4() + " and peanut butter! \n"
-			  + "I think I'd rather take my chances with the cafeteria!"
-			  , "Info", JOptionPane.INFORMATION_MESSAGE);
-	 }
+		  JOptionPane.showMessageDialog(null, "Before you set your phasers to " + model.getNoun1() + 
+		  " you’ve got a lot to do before you " + model.getVerb1() + 
+		  " Starfleet Academy.\n "
+	             + "First of all, you’ve have to leave your old " + model.getNoun2() + ". "
+	             + "It’s not all exotic " + model.getAdj1() + " aliens and Romulan " + model.getNoun3()
+	             + "Life at Starfleet Academy is not " + model.getAdj2() + " all the time. \n"
+	             + "You’ll meet all kind of new " + model.getAdj3() + " ensign. \n"
+	             + "And remember, " + model.getAdj4() + "hotshots such as James T. Kirk have passed through this "  + model.getNoun4() + ".\n"
+	             + "You could be " + model.getAdj5() + ".\n" 
+		      + model.getVerb2() + "to Starfleet Academy!\n"
+	             , "Info", JOptionPane.INFORMATION_MESSAGE);
+		 }
 
 }
